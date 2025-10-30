@@ -48,6 +48,7 @@ public class House extends Asset {
         this.lotsize = lotsize;
     }
     //override
+    @Override
     public double getvalue() {
        double valuePerSquarft;
        // value per squareft

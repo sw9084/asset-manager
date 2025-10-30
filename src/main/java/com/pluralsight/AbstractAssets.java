@@ -1,10 +1,11 @@
 package com.pluralsight;
 //this part class that holds general information about any type of asset
 
-public class Asset {
-    private String description;
-    private String dateAcquired;
-    private double originalCost;
+public abstract class Asset {
+
+    protected String description;
+    protected String dateAcquired;
+    protected double originalCost;
 
     //constructor
     public Asset(String description, String dateAcquired, double originalCost) {
@@ -38,9 +39,7 @@ public class Asset {
     }
 
     // method: getValue
-    public double getValue() {
-        return originalCost;
-    }
+    public abstract getValue();
 
 }
 
